@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна робота №9</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="playerInfo">
+            <p id="userName">Unknown user</p>
+            <div class="points" id="pointsUser">0</div>
+            <div class="card" id="numberUser"></div>
+            <img src="cards/backside.jpg" alt="card image" id="cardUser">
+        </div>
+
+        <div>
+            <button id="back">Go back</button>
+            <p id="attempt">Versus number</p>
+            <button onclick="generate()">Generate</button>
+        </div>
+
+        <div class="playerInfo">
+            <p>Computer</p>
+            <div class="points" id="pointsComputer">0</div>
+            <div class="card" id="numberComputer"></div>
+            <img src="cards/backside.jpg" alt="card image" id="cardComputer">
+        </div>
+        
+    </div>
+    
+    <script src="js/script.js">
+    </script>
+</body>
+</html>

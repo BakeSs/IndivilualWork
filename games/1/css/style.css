@@ -1,0 +1,86 @@
+html, body{
+    height:99%;
+}
+
+img{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: 1;
+}
+
+input{
+    text-align: center;
+    border-radius: 50px;
+}
+
+button{
+    border-radius: 50px;
+    font-size:25px;
+    height: 5%;
+    width: 8%;
+}
+
+h3{
+    position: relative;
+    z-index: 2;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+    font-size:30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size:70px;
+}
+
+.ballInner{
+    height: 350px;
+    width: 350px;
+}
+
+@media screen and (max-width:992px){
+    .ballInner{
+        width:350px;
+        height: 350px;
+    }
+    .container{
+        font-size:40px;
+    }
+    input{
+       height: 2%; 
+       width: 40%; 
+    }
+    button{
+        font-size:25px;
+        height: 5%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .ballInner{
+        width:300px;
+        height: 300px;
+    }
+    .container{
+        font-size:40px;
+    }
+    input{
+       height: 5%; 
+       width: 60%; 
+    }
+    button{
+        font-size:30px;
+        height: 7%;
+        width: 30%;
+    }
+}
